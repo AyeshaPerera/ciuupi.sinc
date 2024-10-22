@@ -1,0 +1,42 @@
+Package: ciuupi.sinc
+Type: Package
+Title: Confidence Intervals Utilizing Uncertain Prior Information
+Version: 1.0.0
+Authors@R: c(person("Ayesha", "Perera", email = "g.perera@latrobe.edu.au", 
+    role = c("aut", "cre")),
+    person("Paul", "Kabaila",
+    email = "P.Kabaila@latrobe.edu.au", role = c("aut")))
+Maintainer: Paul Kabaila <p.kabaila@latrobe.edu.au>
+Description: 
+  This package considers the event of two nested linear regression models, 
+  where there is prior information suggesting that the simpler model is true. 
+  It constructs a confidence interval that incorporates this uncertain prior 
+  information under the assumption that the error variance is known. The package 
+  uses numerical nonlinear constrained optimization to create a confidence 
+  interval with the desired coverage probability and expected length properties. 
+  This package is useful in situations where the error variance has been 
+  accurately estimated from prior data or when the difference between the 
+  dimensions of the response vector and the regression parameter vector is 
+  sufficiently large—typically 30 or more. In such cases, replacing the known 
+  error variance with its standard estimator results in a confidence interval 
+  that, to a very good approximation, maintains the same coverage probability 
+  and expected length as in the known variance case. Additionally, the package 
+  can be applied when more complex models can be approximated by a linear 
+  regression model with known error variance, where certain unknown parameters 
+  are substituted with estimates. This confidence interval is described in 
+  Mainzer, R. and Kabaila, P. 
+   (2019) <doi:10.32614/RJ-2019-026>, and is a member of the family of 
+  confidence intervals proposed by Kabaila, P. and Giri, K. (2009) 
+  <doi:10.1016/j.jspi.2009.03.018>.
+License: GPL-2
+Imports: JuliaCall,
+         nloptr,
+         stats,
+         graphics
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
