@@ -38,16 +38,16 @@ Let $\rho = \text{corr}(\widehat{\theta}, \widehat{\tau})$, so that  $\rho
 = \boldsymbol{a}^{\top}(\boldsymbol{X}^{\top}\boldsymbol{X})^{-1}\boldsymbol{c} \big / (v_{\theta} v_{\tau} )^{1/2}$. Note that $v_{\theta}$, $v_{\tau}$ and $\rho$ are known quantities. 
 Let $\gamma = \tau \big/ \big(\sigma \, v_{\tau}^{1/2} \big)$, which is an unknown parameter and $\widetilde{\gamma}$ be the estimate of $\gamma$. 
 
-\cite{KabailaGiri2009JSPI} derived the form of this confidence interval that utilizes the uncertain prior information to be 
-%
-\begin{equation*}
+[Kabaila, P. & Giri, K. (2009)](https://doi.org/10.1016/j.jspi.2009.03.018) derived the form of this confidence interval that utilizes the uncertain prior information to be 
+
+$$
 	\text{CI}(b,s) = \Big [ \widehat{\theta}
 	- v_{\theta}^{1/2} \, \sigma \, b(\widetilde{\gamma}) 
 	\pm 
 	v_{\theta}^{1/2} \, \sigma \,
 	s(\widetilde{\gamma}) \Big].
-\end{equation*}
-%
+$$
+
 where $b: \mathbb{R} \rightarrow \mathbb{R}$ is an odd continuous 
 function and $s: \mathbb{R} \rightarrow [0, \infty)$ is an even continuous function. 
 In addition, $b(x) = 0$ and $s(x) = z_{1 - \alpha/2}$ for all $|x| \ge d$, where 
