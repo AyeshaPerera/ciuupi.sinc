@@ -55,6 +55,7 @@ The confidence interval that utilizes the uncertain prior information (CIUUPI)  
 ## Functions in this package
 The functions in this package are used as follows:
 ```{r setup}
+devtools::install_github("AyeshaPerera/ciuupi.sinc")
 library(ciuupi.sinc)
 ```
 
